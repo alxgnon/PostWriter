@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="BaseTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.MaterialComponents">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentInverse</item>
+    </style>
+
+</resources>

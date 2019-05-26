@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:background="@android:color/transparent"
+            android:gravity="top|start"
+            android:hint="@string/placeholder"
+            android:inputType="textCapSentences|textMultiLine"
+            android:paddingStart="@dimen/margin"
+            android:paddingTop="@dimen/top_margin"
+            android:paddingEnd="@dimen/margin"
+            android:paddingBottom="@dimen/bottom_margin"
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/margin"
+        android:alpha="0.2"
+        android:src="@drawable/ic_send_white_24dp" />
+
+</merge>
