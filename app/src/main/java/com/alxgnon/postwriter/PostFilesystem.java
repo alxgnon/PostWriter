@@ -63,10 +63,11 @@ class PostFilesystem {
         }
     }
 
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     private static File getWorkingDirectory() {
-        return new File(
-                Environment.getExternalStoragePublicDirectory(
-                        Environment.DIRECTORY_DOCUMENTS),
-                WORKING_DIRECTORY);
+        File file = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
+        file = new File(file, WORKING_DIRECTORY);
+        file.mkdirs();
+        return file;
     }
 }

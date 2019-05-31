@@ -12,7 +12,7 @@ public class MainActivity extends PostMemory {
 
     @Override
     public View getContainer() {
-        return findViewById(R.id.container);
+        return findViewById(android.R.id.content);
     }
 
     @Override
